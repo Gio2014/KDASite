@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>KDA Financial</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/108454911/html5up-miniport/js/jquery.min.js"></script>
+		<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/108454911/html5up-miniport/js/jquery.scrolly.min.js"></script>
+		<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/108454911/html5up-miniport/js/skel.min.js"></script>
+		<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/108454911/html5up-miniport/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/108454911/html5up-miniport/css/skel.css">
+			<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/108454911/html5up-miniport/css/style.css">
+			<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/108454911/html5up-miniport/css/style-desktop.css">
+			<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/108454911/html5up-miniport/css/style-1000px.css">
+			<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/108454911/html5up-miniport/css/font-awesome.min.css">
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="#address">Address</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#">Submit Payment</a></li>
+					<li><a href="#social">Follow Us</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u">
+							<span class="image fit"><img src="https://dl.dropboxusercontent.com/u/108454911/kdalogo2.png" alt="" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h1>Hi. We're <strong>KDA Financial</strong>.</h1>
+							</header>
+							<p>We're an accounting firm located in Lehi, UT. Scroll below to see the different ways we can help your business.</p>
+							<a href="#address" class="button big scrolly">Visit Us</a>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Portfolio -->
+			<div class="wrapper style3">
+				<article id="services">
+					<header>
+						<h2>These are the services we offer.</h2>
+						<p>If you don't see the service you need, fill out our contact form and let us know what you're looking for and we'll be in touch!</p>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+									<h3><a href="#">Personal Taxes</a></h3>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<h3><a href="#">Business Taxes</a></h3>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<h3><a href="#">Consulting</a></h3>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+									<h3><a href="#">Payroll</a></h3>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<h3><a href="#">Bookkeeping</a></h3>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<h3><a href="#">Training</a></h3>
+								</article>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p>Would you like to reach out to us?</p>
+						<a href="#contact" class="button big scrolly">Contact Us</a>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Contact -->
+			<div class="wrapper style4">
+				<article id="contact" class="container 75%">
+					<header>
+						<h2>Have questions or would like to chat?</h2>
+						<p>Send us your questions, and we'll back to you promptly. You can also call us directly at 801-900-1775</p>
+					</header>
+					<div>
+						<div class="row">
+							<div class="12u">
+								<div>
+						<div class="row">
+							<div class="12u">
+								<form method="post" action="/thankyou/">
+								{% csrf_token %}
+									<div>
+										<div class="row">
+											<div class="6u">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="6u">
+												<input type="text" name="sender" id="sender" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<textarea name="message" id="message" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="row 200%">
+											<div class="12u">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" /></li>
+													<li><input type="reset" value="Clear Form" class="alt" /></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							</div>
+						</div>
+		<!-- Address -->
+						<div class="row">
+							<div class="12u" id="address">
+							<hr />
+							<h3>3300 Pilgrim Loop</h3>
+							<h3>Lehi, UT 84043</h3>
+							<h3>801-900-1775</h3>
+							<h3>801-290-8208 (Fax)</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<hr />
+								<h3>Find us on ...</h3>
+								<ul id="social" class="social">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/pages/KDA-Financial/340233042824426" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+									<!--
+									<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
+									<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
+									<li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
+									<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
+									<li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
+									<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
+									<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
+									<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
+									-->
+								</ul>
+								<hr />
+							</div>
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; KDA Financial. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+				</article>
+			</div>
+
+	</body>
+</html>
